@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond10x · Governed Autonomy — From intent to verified outcome</title>
+  <meta name="description" content="Beyond10x lets organizations give autonomous agents real responsibility while keeping control over what they may do, what they must prove, and when work is actually complete.">
+  <meta property="og:title" content="Beyond10x · From intent to verified outcome">
+  <meta property="og:description" content="Governed autonomy: agents choose how to do the work. Your organization defines what must be true before the work counts.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07131c">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Beyond10x home">
+        <img src="assets/mark.svg" alt="" width="28" height="28">
+        <span>Beyond10x</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#proof">Proof</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-small" href="#access">Early access</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Governed Autonomy</p>
+          <h1>From intent to<br><span class="accent">verified outcome.</span></h1>
+          <p class="lede">
+            Deploy autonomous agents that do consequential work without giving up control.
+            Beyond10x turns your rules, your authority structure and your standards of proof
+            into executable protocols that govern how agents operate.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#workforce">Build an autonomous workforce</a>
+            <a class="btn btn-ghost" href="#engineering">Deploy autonomous engineering</a>
+          </div>
+        </div>
+
+        <figure class="case" id="case" aria-label="Illustration: one intent moving to a verified outcome" data-stage="0">
+          <div class="case-head">
+            <span class="case-label">Intent</span>
+            <span class="case-state" id="case-state">open</span>
+          </div>
+          <p class="intent"><span id="intent-text"></span><span class="caret" aria-hidden="true"></span></p>
+
+          <ol class="obligations" id="obligations">
+            <li data-k="spec"><span class="ob-name">Specification</span><span class="pill" data-s="open">open</span></li>
+            <li data-k="sec"><span class="ob-name">Security requirements</span><span class="pill" data-s="open">open</span></li>
+            <li data-k="impl"><span class="ob-name">Implementation</span><span class="pill" data-s="open">open</span></li>
+            <li data-k="verify"><span class="ob-name">Verification</span><span class="pill" data-s="open">open</span></li>
+            <li data-k="deploy"><span class="ob-name">Deployment</span><span class="pill" data-s="open">open</span></li>
+            <li data-k="ops"><span class="ob-name">Operational checks</span><span class="pill" data-s="open">open</span></li>
+          </ol>
+
+          <div class="agents" aria-hidden="true">
+            <span class="agent" style="--i:0"></span>
+            <span class="agent" style="--i:1"></span>
+            <span class="agent" style="--i:2"></span>
+            <span class="agent" style="--i:3"></span>
+          </div>
+
+          <p class="event" id="event" aria-live="off">Waiting for intent</p>
+          <figcaption class="sr-only">
+            An intent, "We need enterprise SSO", is broken into obligations. Agents work on them freely.
+            Each obligation advances only when evidence exists or authority is granted. A revision change
+            forces re-verification. After release, production observation turns the intent green:
+            verified in production.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- VALUE LINE -->
+    <section class="triad">
+      <div class="wrap triad-grid">
+        <div>
+          <p class="triad-k">Autonomy</p>
+          <p class="triad-v">is the value.</p>
+        </div>
+        <div>
+          <p class="triad-k">Governance</p>
+          <p class="triad-v">makes it trustworthy.</p>
+        </div>
+        <div>
+          <p class="triad-k">Evidence</p>
+          <p class="triad-v">makes it verifiable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE IDEA -->
+    <section class="section" id="idea">
+      <div class="wrap narrow">
+        <p class="eyebrow">The idea</p>
+        <h2 class="statement">
+          Agents choose how to do the work.
+          <span class="muted">Your organization defines what must be true before the work counts.</span>
+        </h2>
+        <p class="body-l">
+          Most agent systems are built around execution: an intent goes in, an agent calls tools,
+          a result comes out. What they leave out is the part an organization actually cares about:
+          who allowed this, what had to be established, and whether it is really done.
+          Beyond10x is that missing layer.
+        </p>
+      </div>
+
+      <div class="wrap compare">
+        <div class="compare-row">
+          <div class="compare-cell them"><span class="tag">Typical agent platform</span>Give agents tools.</div>
+          <div class="compare-cell us"><span class="tag">Beyond10x</span>Give agents responsibility.</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell them"><span class="tag">Typical automation</span>Did the workflow run?</div>
+          <div class="compare-cell us"><span class="tag">Beyond10x</span>Did the intended outcome become true?</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell them"><span class="tag">Typical agent system</span>The agent says it is done.</div>
+          <div class="compare-cell us"><span class="tag">Beyond10x</span>The system can prove whether it is done.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section alt" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2>A governed case around every piece of work</h2>
+        <p class="body-l narrow-l">
+          Every intent becomes a case. The case knows what must happen, what may happen and what is
+          actually true right now. Agents work inside it. Real-world observations come back as evidence,
+          and the case is re-evaluated until a legitimate outcome has been earned.
+        </p>
+
+        <div class="pillars">
+          <article class="pillar" style="--c: var(--blue)">
+            <h3>Protocol</h3>
+            <p class="q">What must happen?</p>
+            <p>The obligations your way of working imposes: steps, checks and conditions that define the work.</p>
+          </article>
+          <article class="pillar" style="--c: var(--amber)">
+            <h3>Authority</h3>
+            <p class="q">What may happen?</p>
+            <p>Who may authorize what. Which actions agents take freely, which need approval, which are forbidden.</p>
+          </article>
+          <article class="pillar" style="--c: var(--violet)">
+            <h3>Knowledge</h3>
+            <p class="q">What is actually true?</p>
+            <p>What has been established, by what evidence, about which revision. And what is still unknown.</p>
+          </article>
+        </div>
+
+        <div class="loop" aria-label="The governed loop">
+          <div class="loop-step"><span class="n">1</span>Intent becomes a governed case</div>
+          <div class="loop-step"><span class="n">2</span>Obligations and admissible actions are derived</div>
+          <div class="loop-step"><span class="n">3</span>Agents do the work</div>
+          <div class="loop-step"><span class="n">4</span>Observations produce evidence</div>
+          <div class="loop-step"><span class="n">5</span>The protocol is re-evaluated</div>
+          <div class="loop-outcomes">
+            <span>continue</span><span>escalate</span><span>request authority</span><span>recover</span><span class="win">conclude</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+      <div class="wrap">
+        <p class="eyebrow">Two ways in</p>
+        <h2>One platform. Your domain or ours.</h2>
+
+        <div class="products">
+          <article class="product" id="workforce">
+            <p class="product-kicker">Any organization, any domain</p>
+            <h3>Autonomous Workforce</h3>
+            <p class="product-promise">
+              Deploy autonomous workers that operate according to your organization's protocols,
+              authority structure and standards of proof.
+            </p>
+            <p>You bring your domain, your procedures and your tools. You describe:</p>
+            <ul class="say">
+              <li>what work means here, and which cases you handle</li>
+              <li>what must be established, and what evidence counts</li>
+              <li>who may authorize what, and which actions agents may take</li>
+              <li>what needs human judgment, and what "done" means</li>
+            </ul>
+            <p>Beyond10x turns that operating model into protocols autonomous agents can work within.</p>
+            <p class="domains">
+              <span>Operations</span><span>Finance</span><span>Procurement</span><span>Compliance</span>
+              <span>Insurance</span><span>Legal</span><span>Research</span><span>Customer operations</span>
+              <span>Manufacturing</span><span>Security</span><span>Reliability</span>
+            </p>
+          </article>
+
+          <article class="product product-eng" id="engineering">
+            <p class="product-kicker">Software organizations</p>
+            <h3>Autonomous Engineering</h3>
+            <p class="product-promise">
+              Turn product intent into verified software changes. From intent to production, with proof.
+            </p>
+            <p>
+              A prebuilt engineering system, so you do not have to model the domain yourself.
+              Agents investigate, design, implement, test, review, migrate, deploy and operate.
+              They only advance when the required evidence exists and the necessary authority has been
+              granted. Every change stays traceable from intent to production outcome.
+            </p>
+            <ol class="flow">
+              <li>Understand the desired outcome</li>
+              <li>Specify system behaviour</li>
+              <li>Derive engineering obligations</li>
+              <li>Autonomous implementation</li>
+              <li>Verification and evidence</li>
+              <li>Authorized release</li>
+              <li>Production observation</li>
+              <li class="flow-end">Verified outcome</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section class="section alt" id="principles">
+      <div class="wrap">
+        <p class="eyebrow">Principles</p>
+        <h2>What we hold the system to</h2>
+
+        <div class="principles">
+          <article class="principle principle-wide">
+            <h3>Completion is earned</h3>
+            <p>Most automation treats "the process finished" as success. We do not.</p>
+            <ul class="not-done">
+              <li>A model run completing is not completion.</li>
+              <li>A workflow finishing is not completion.</li>
+              <li>A pull request merging is not completion.</li>
+              <li>A successful deployment is not necessarily completion.</li>
+            </ul>
+            <p>
+              Work is complete when the conditions its protocol defines are satisfied. That can mean
+              evidence, observation over time, independent verification, approval or explicit acceptance.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Autonomy inside boundaries</h3>
+            <p>
+              We do not script every step. That would reduce autonomy to workflow automation.
+              Agents get a governed frontier instead: what is known, what is required, what is
+              allowed, what needs authority, and what would move the case forward. Inside it,
+              they are free.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Intent survives the whole journey</h3>
+            <p>
+              What was asked for, how it was interpreted, what work was done, what authority was
+              exercised, what reached production, and whether the original intent actually became true.
+              One line, from request to outcome.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Your way of working becomes executable</h3>
+            <p>
+              Policies, runbooks, checklists, approval chains and review habits usually sit in documents
+              that different people read differently. Beyond10x turns them into protocols that govern
+              every autonomous worker the same way.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Deterministic where it matters</h3>
+            <p>
+              Agents are probabilistic: they reason, investigate and adapt. What is permitted, what is
+              required, which evidence is admissible and whether completion was earned are decided
+              deterministically. Final authority never rests on a model's judgment alone.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section" id="proof">
+      <div class="wrap proof-grid">
+        <div>
+          <p class="eyebrow">Proof-carrying work</p>
+          <h2>Every outcome explains itself</h2>
+          <p class="body-l">
+            A governed outcome carries its own explanation and its own evidence. When someone asks why
+            something happened, the answer is part of the work, not an archaeology project.
+          </p>
+        </div>
+        <div class="receipt" role="list" aria-label="Questions every outcome can answer">
+          <p class="receipt-head"><span>Outcome record</span><span class="ok">verified</span></p>
+          <p role="listitem">Why was this allowed?</p>
+          <p role="listitem">Why was it considered complete?</p>
+          <p role="listitem">What evidence supported the decision?</p>
+          <p role="listitem">Which revision did that evidence apply to?</p>
+          <p role="listitem">Who or what produced it?</p>
+          <p role="listitem">Was independent verification required?</p>
+          <p role="listitem">Were any obligations waived, and by whom?</p>
+          <p role="listitem">Who authorized consequential actions?</p>
+          <p role="listitem">What is still uncertain?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="section alt">
+      <div class="wrap narrow">
+        <p class="eyebrow">Where this goes</p>
+        <h2>An operating layer for autonomous organizations</h2>
+        <p class="body-l">
+          Organizations will delegate more and more consequential work to autonomous systems.
+          For that to work, those systems have to take part in how the organization operates:
+          how work is conducted, what authority exists, what evidence is trusted, which risks
+          need escalation and which outcomes are acceptable. We are building the layer that makes
+          that possible.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACCESS -->
+    <section class="section closing" id="access">
+      <div class="wrap narrow center">
+        <h2 class="closing-title">From intent to <span class="accent">verified outcome.</span></h2>
+        <p class="body-l">
+          We are working with a small number of design partners who want to give autonomous agents
+          real responsibility and keep control over authority, evidence and completion.
+        </p>
+        <div class="cta-row center">
+          <!-- TODO: contact address for design-partner requests is not decided yet -->
+          <a class="btn" href="#access" data-todo="contact">Become a design partner</a>
+          <a class="btn btn-ghost" href="https://beyond10x.github.io/">Read the technical documentation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand brand-quiet"><img src="assets/mark.svg" alt="" width="20" height="20"> Beyond10x</span>
+      <span class="muted">Governed Autonomy</span>
+      <a href="https://github.com/beyond10x">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="case.js" defer></script>
+</body>
+</html>
