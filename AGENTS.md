@@ -27,3 +27,11 @@ The customer-facing Governed Autonomy page. What it is and how to view it is in
 - Every commit and push is `b10x-bot[bot]`'s, through `b10x-gates bot`. Every GitHub write
   (settings, dispatches, pull requests) goes through `b10x-gates api`, never `gh`.
 - Actions are pinned to full commit SHAs and every job declares its permissions.
+
+## Serves
+
+This repository advances these objectives from `atlas/ROADMAP.md`:
+
+- O1: states governed reach for customers: agents act only within authority the organization declares, and need approval for what it reserves.
+- O2: states decisions as data with evidence: protocols declare what must be true, and work counts as done only when evidence proves it.
+- O5: is the public entry point of the customer-facing agent platform, presenting the Autonomous Workforce offer and early access.
